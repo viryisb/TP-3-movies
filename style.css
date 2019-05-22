@@ -1,0 +1,101 @@
+body {
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  height: 75px;
+  display: flex;
+}
+.header .buscador {
+  width: 85%;
+  height: 75px;
+  display: flex;
+  align-content: center;
+  flex: 1;
+}
+.header .buscador .input {
+  flex: 1;
+}
+.header .buscador .input input {
+  height: 60px;
+  width: 100%;
+}
+.header .buscador .lupa {
+  width: 30px;
+  height: 30px;
+  /* margin:50px;  */
+}
+
+.logo {
+  width: 95px;
+  height: 75px;
+  background-color: black;
+}
+
+.navegador {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  position: fixed;
+}
+.navegador .navegador-lista {
+  padding: 0;
+}
+.navegador .navegador-lista .navegador-item {
+  list-style: none;
+  height: auto;
+  margin: 12px;
+  width: 78px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid;
+}
+.navegador .navegador-lista .navegador-item svg {
+  height: 50px;
+  width: 50px;
+}
+
+.presentacion {
+  height: 384px;
+  background-image: url("./assets/batman.jpg");
+}
+.presentacion .batman {
+  height: 100%;
+}
+.presentacion .batman .texto {
+  width: 100%;
+  height: 384px;
+  position: absolute;
+  display: flex;
+}
+.presentacion .batman .texto h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.contenedor {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor .contenedor-peliculas {
+  flex-direction: row;
+}
+.contenedor .contenedor-peliculas ul {
+  display: flex;
+  list-style: none;
+}
+
+.pelicula {
+  background-color: red;
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
