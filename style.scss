@@ -16,10 +16,13 @@ body{
      
 .input{
     flex:1;
+    margin-left: -27px;
+    
 
         input{
             height: 60px;
             width:100%;
+            padding-left: 50px;
            
            
         }}
@@ -27,7 +30,9 @@ body{
     .lupa{
         width: 30px;
         height: 30px;
-        /* margin:50px;  */
+        position:relative;
+        top:20px;
+        left:15px;        /* margin:50px;  */
        
         
   
@@ -36,14 +41,19 @@ body{
             
 }
 .logo{
-    width: 95px;
-    height: 75px;  
+    
     background-color: black;
-   
+    align-items: center;
+     justify-content: center;
+     .svg{
+         width: 80px;
+        height: 40px;  
+
+     }
 }
 .navegador{
 width:100%;
- height: 75px;
+/*  height: 75px;  */
 display:flex;
 position:fixed;
 
@@ -51,21 +61,26 @@ position:fixed;
 ;
 .navegador-lista{
     padding:0;
+    font-size: 10px;
+    
+
 
 .navegador-item{
     list-style: none;
         height: auto;
-        margin: 12px;
+        margin: 0;
         width: 78px;
-        padding:4px;
+        padding:10px;
         display:flex;
-        justify-content: center;
+        align-items: center;
         flex-direction:column;
-        border:1px solid;
+        text-align: center;
+        border-bottom: 1px solid black;
+        
         svg{
             
-            height:50px;
-            width:50px;
+            height:30px;
+            width:30px;
         }
 
     }
@@ -80,23 +95,26 @@ position:fixed;
 .presentacion{
     height: 384px;
     background-image: url("./assets/batman.jpg");
-    
-
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 
 .batman{
-    height: 100%;
+   /*  height: 100%; */
     .texto{
         width:100%;
         height: 384px;
-        position: absolute;
-    display:flex;
+        
+    
+    
     
             
             h1{
                 font-size: 28px;
                 font-weight: 500;
                 margin:0;
-                text-transform: uppercase;
+               
                
             }
             }
