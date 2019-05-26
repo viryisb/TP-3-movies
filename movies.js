@@ -1,4 +1,7 @@
-if ( categoria === 'toprated'){
+console.log("hola mundo esto anda?")
+
+
+/* if ( categoria === 'toprated'){
     // url = `` 
     document.querySelector('#peliculas h2').innerHTML
 }
@@ -12,4 +15,4 @@ fetch(url)
 .then(res => res.json())
 .then(movies =>{
 
-})
+})  */
