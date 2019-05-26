@@ -1,28 +1,41 @@
 body{
     margin:0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight:  lighter;
 }
 .header{
+    width: 100%;
     height: 75px;
     display:flex;
+    position:fixed;
+    
 
     .buscador{
-        width: 85%;
+        width: 100%;
         height: 75px;
         display:flex;
         align-content: center;
         flex:1;
+       
         
      
 .input{
+   
     flex:1;
-    margin-left: -27px;
+    margin-left: -29px;
+    width:100%;
     
 
         input{
             height: 60px;
-            width:100%;
             padding-left: 50px;
+            border:0;
+            width:100%;
+            .searcher{
+                border:0px;
+                width:100%;
+            }
+           
            
            
         }}
@@ -32,7 +45,8 @@ body{
         height: 30px;
         position:relative;
         top:20px;
-        left:15px;        /* margin:50px;  */
+        left:15px;   
+            /* margin:50px;  */
        
         
   
@@ -45,8 +59,10 @@ body{
     background-color: black;
     align-items: center;
      justify-content: center;
-     .svg{
-         width: 80px;
+     display:flex;
+     
+     svg{
+         width: 100px;
         height: 40px;  
 
      }
@@ -55,13 +71,15 @@ body{
 width:100%;
 /*  height: 75px;  */
 display:flex;
-position:fixed;
+
 
 
 ;
 .navegador-lista{
     padding:0;
     font-size: 10px;
+    position:fixed;
+    top:80px;
     
 
 
@@ -76,7 +94,10 @@ position:fixed;
         flex-direction:column;
         text-align: center;
         border-bottom: 1px solid black;
-        
+        cursor: pointer;
+        li :hover{
+            color:red;
+        }
         svg{
             
             height:30px;
@@ -99,7 +120,7 @@ position:fixed;
     align-content: center;
     justify-content: center;
     align-items: center;
-
+margin-top:70px;
 .batman{
    /*  height: 100%; */
     .texto{
@@ -127,17 +148,65 @@ position:fixed;
     flex-direction: column;
    
      .contenedor-peliculas{
-       
-        flex-direction:row;
+        display:flex;
+        flex-direction:column;
+        background-color: grey;
+        nav{
+           
+            width:100%;
+            background-color: aqua;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            h2{
+               
+                font-weight: lighter;
+                color: grey;
+            }
+            h4{
+                font-weight: lighter;
+                color: grey;
+            }
+        }
  ul{
+     padding:0;
+     margin:0;
      display:flex;
+     flex-direction: row;
      list-style: none;
-     
+     flex-wrap: wrap;
+     width:100%;
+     background-color: green;
     } } 
 } 
 .pelicula{
-    background-color: red;
-    margin: 5px;
-    height: 20px;
-    width:20px;
+    background-color: red; 
+  box-sizing:border-box;
+  border: 1px solid;
+    height: 300px;
+    width:20%;
+    padding: 10px;
+   
+
+    
+
+   
+}
+@media screen and (max-width: 768px) {
+.hamburguesa{
+    display:none;
+list-style: none;
+display:flex;
+ align-items: center;
+ text-align: center;
+}
+.menu{
+    display:none;  
+svg{
+color:red;
+height: 300px;
+
+}}
+
 }
